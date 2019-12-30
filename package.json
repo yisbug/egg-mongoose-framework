@@ -1,9 +1,9 @@
 {
   "name": "eggooo",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "dependencies": {
-    "egg": "^2.3.0"
+    "egg": "^2.25.0"
   },
   "devDependencies": {
     "autod": "^3.0.1",
