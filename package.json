@@ -1,16 +1,17 @@
 {
-  "name": "eggooo",
-  "version": "1.0.2",
+  "name": "egg-mongoose-framework",
+  "version": "1.0.0",
   "description": "",
   "dependencies": {
-    "egg": "^2.25.0"
+    "egg": "^2.26.0",
+    "egg-mongoose": "^3.2.0"
   },
   "devDependencies": {
     "autod": "^3.0.1",
     "autod-egg": "^1.0.0",
-    "egg-bin": "^4.4.0",
-    "egg-ci": "^1.8.0",
-    "egg-mock": "^3.14.0",
+    "egg-bin": "^4.14.1",
+    "egg-ci": "^1.15.0",
+    "egg-mock": "^4.0.0",
     "eslint": "^4.18.0",
     "eslint-config-egg": "^7.0.0",
     "webstorm-disable-index": "^1.2.0"
@@ -20,7 +21,7 @@
   },
   "scripts": {
     "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
-    "test-local": "egg-bin test",
+    "test-local": "egg-bin test --watch",
     "cov": "egg-bin cov",
     "lint": "eslint .",
     "ci": "npm run lint && egg-bin pkgfiles --check && npm run cov",
@@ -40,10 +41,10 @@
   ],
   "author": "yisbug",
   "files": [
-    "app",
-    "config",
+    "index.js",
     "lib",
-    "index.js"
+    "app",
+    "config"
   ],
   "eslintIgnore": [
     "coverage",
