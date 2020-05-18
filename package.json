@@ -1,6 +1,6 @@
 {
   "name": "egg-mongoose-framework",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "dependencies": {
     "egg": "^2.26.0",
