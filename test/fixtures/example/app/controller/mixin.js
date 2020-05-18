@@ -81,7 +81,7 @@ module.exports = {
           try {
             const searchObj = JSON.parse(value);
             search[key] = {};
-            const arr = ['undefined', 'object'];
+            const arr = [ 'undefined', 'object' ];
             if (!arr.includes(typeof searchObj.$gt)) {
               search[key].$gt = searchObj.$gt;
             }
