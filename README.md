@@ -2,6 +2,8 @@
 
 项目重新命名为 egg-mongoose-framework
 
+使用示例：https://github.com/yisbug/egg-mongoose-curd
+
 ### 特性
 
 - 自动加载 app/schema 目录中，按照 mongoose 的 schema 规范定义的 schema 文件。
