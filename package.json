@@ -1,23 +1,23 @@
 {
   "name": "egg-mongoose-framework",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "",
   "dependencies": {
-    "egg": "^2.26.0",
-    "egg-mongoose": "^3.2.0"
+    "egg": "^3.28.0",
+    "egg-mongoose": "^4.0.1"
   },
   "devDependencies": {
-    "autod": "^3.0.1",
-    "autod-egg": "^1.0.0",
-    "egg-bin": "^4.14.1",
-    "egg-ci": "^1.15.0",
-    "egg-mock": "^4.0.0",
-    "eslint": "^4.18.0",
-    "eslint-config-egg": "^7.0.0",
-    "webstorm-disable-index": "^1.2.0"
+    "egg-bin": "^6.10.0",
+    "egg-mock": "^5.12.5",
+    "eslint": "^9.10.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.9.0",
+    "prettier": "^3.3.3",
+    "@eslint/js": "^9.10.0"
   },
   "engines": {
-    "node": ">=8.0.0"
+    "node": ">=18.0.0"
   },
   "scripts": {
     "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
@@ -25,11 +25,7 @@
     "cov": "egg-bin cov",
     "lint": "eslint .",
     "ci": "npm run lint && egg-bin pkgfiles --check && npm run cov",
-    "autod": "autod",
     "pkgfiles": "egg-bin pkgfiles"
-  },
-  "ci": {
-    "version": "8, 9"
   },
   "repository": {
     "type": "git",
