@@ -1,11 +1,11 @@
 {
-  "eslint.enable": true,
-  // 编辑器配置
-  "editor.formatOnSave": true, // 保存文件时自动格式化
+  "editor.formatOnSave": true, // 优先使用 prettier-eslint
 
-  // 关闭插件，避免格式化冲突
-  "editor.formatOnSaveTimeout": 500,
+  // eslint 插件配置部分
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
-  }
+  },
+  "html.format.indentHandlebars": true,
+  "html.format.indentInnerHtml": true,
+  "vetur.format.defaultFormatter.html": "none"
 }

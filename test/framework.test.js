@@ -1,5 +1,3 @@
-'use strict';
-
 const mock = require('egg-mock');
 const assert = require('assert');
 describe('test/framework.test.js', () => {
